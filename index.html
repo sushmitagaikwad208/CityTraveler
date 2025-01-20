@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours & Travels</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            text-align: center;
+            position: sticky;
+            position: -webkit-sticky;
+            margin-top: 0;
+            top:0;
+            
+            
+        }
+        .header h1{
+            color: #fff;
+            text-shadow: #333 5px 5px 4px
+        }
+
+        .homeslider{
+            clear: both;
+        }
+        .myslide{
+            display: none;
+            height: 500px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            box-shadow: #333 0px 0px 5px 2px;
+        }
+        .myslide div{
+            text-align: center;
+            position: relative;
+            font-size: 150%;
+            top: 40%;
+        }
+        .myslide div .mb-4{
+            color: #fff;
+            text-shadow: #333 5px 5px 3px;
+        }
+        .myslide div p a{
+            background-color:#ffa; text-decoration: none;
+            padding:5px 15px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .homeslieder2{
+            clear: both;
+        }
+        .homeslieder2 ul{
+            list-style-type: none;
+        }
+
+        .homeslieder2 .ulimg li{
+            float: left;
+            width:200px;
+            height: 150px;
+            margin: 20px 20px;
+            box-shadow: 10px 10px 5px 4px;
+        }
+
+
+        .myslide2{
+           display: none;
+            height: 500px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            box-shadow: #333 0px 0px 5px 2px;
+        }
+        .myslide2 .text{
+            text-align: center;
+            position: relative;
+            font-size: 150%;
+            top: 40%;
+        }
+
+        .myslide2 .text h3{
+            color:#fff;
+            text-shadow:#333 5px 5px 4px;
+        }
+
+        .myslide2 .text ul li{
+            color:#fff;
+            text-shadow:#333 2px 2px 1px;
+        }
+        .menu{
+            list-style-type: none;
+            
+            margin:0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            opacity: 0.6;
+            position: sticky;
+            position: -webkit-sticky;
+            top:50px;
+            border-radius: 10px;
+            box-shadow: #fff 0px 0px 10px 0px;
+        }
+        .menu li{
+            float: left;
+            width: 160px;
+        }
+
+        .menu li a{
+            display: block;
+            color:#fff;
+            text-align: center;
+            padding: 15px 5px;
+            text-decoration: none;
+
+        }
+        .col{
+            margin: 0 5%;
+            height: 300px;
+            border-bottom: 2px solid #aaa;
+        }
+
+        .col .figure{
+            width: 30%;
+            float: left;
+            margin-right:5%;
+        }
+
+        .col .figure img{
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        .footersec{
+            background-color: #333;
+            color:whitesmoke;
+        }
+        .footersec .row{
+            margin: 10px 20px;
+        }
+
+        .footersec .row .col{
+            width: 30%;
+            margin-left: 1%;
+            display: table-cell;
+        }
+        .footersec .row .col ul li{
+            display: inline-block;
+            margin: 5px;
+            box-shadow: #aaa 0px 0px 5px 1px;
+            transition: box-shadow 5s;
+            
+        }
+
+        .footersec .row .col ul li a{
+            text-decoration: none;
+            color: whitesmoke;
+            
+        }
+        .footersec .row .col ul li:hover{
+            box-shadow: #777 2px 2px 8px 5px;
+        }
+        .bstag{
+            margin: 20px;
+
+        }
+        .bstag .agent{
+            width:30%;
+            margin:20px 1%;
+            float: left;
+            border:1px solid #aaa;
+            text-align: center;
+            box-shadow: #333 5px 5px 4px 3px;
+            transition: box-shadow 2s;
+        }
+
+        .bstag .agent:hover{
+            box-shadow: #333 15px 15px 14px 13px;
+        }
+
+        .row .col-lg-4{
+            width:30%;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-image: url('images/h1.jpg'); background-repeat: no-repeat; background-size: 100% 100%; height: 500px; margin: 0px 0px; margin-top: -30px; box-shadow:#aaa 2px 2px 3px 3px; border: none; border-radius: 3px;">
+    <div class="header">
+        <h1>Shree Tours & Travels</h1>
+        <p style="color:#fa0"><i>Best Tours & Travles</i></p>
+    </div>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Package1.html">Package</a></li>
+        <li><a href="bestspot.html">Best Spots</a></li>
+        <li style="width:200px"><a href="bstprvtrs.html">Best Previous Tours</a></li>
+        <li><a href="service1.html">Services</a></li>
+        <li><a href="FeedBack.html">FeedBack</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="about.html">About Us</a></li>
+    </ul>
+    <div style="text-align: center; margin: 20px 0px; font-family: Arial, Helvetica, sans-serif;">
+        <h1 class="mb-4" style="font-size: 40px; color:#fff; text-shadow: #333 5px 5px 3px;">Travel Until Tomorrow Come</h1>
+    </div>
+    </div>
+    <div style="text-align: center; margin: 20px 0px; font-family: Arial, Helvetica, sans-serif;">
+        <h1 class="mb-4" style="font-size: 40px; color:#333">Popular Destinations</h1>
+    </div>
+    <div class="homeslider">
+        <div class="myslide" style="background-image: url('images/spot/taj.jpg');">
+            <div>
+                <h1>Taj Mahal, Agra(Uttar Pradesh)</h1>
+			    <h3 class="mb-4">Shah Jahan and Mumtaz Mahal</h3>
+                
+            </div>
+        </div>
+        <div class="myslide" style="background-image: url('images/spot/munnar.jpg');">
+            <div>
+                <h1>Munnar, Kerala</h1>
+			    <h3 class="mb-4">Famous Hill Station</h3>
+               
+            </div>
+        </div>
+        <div class="myslide" style="background-image: url('images/spot/Freedom.jpg');">
+            <div>
+                <h1>Freedom Fighter Park,Mysore</h1>
+			    <h3 class="mb-4" style="color:#fff; text-shadow: #333 5px 5px 3px 2px;">Dedicated to the fighters who fought for the independence of our country</h3>
+               
+            </div>
+        </div>
+        <div class="myslide" style="background-image: url('images/spot/valley.jpg');">
+          <div>
+              <h1>Valley of Flowers, Uttarakhand</h1>
+        <h3 class="mb-4">home to a variety of endangered species of animals, including the snow leopard</h3>
+             
+          </div>
+      </div>
+      <div class="myslide" style="background-image: url('images/spot/amber.jpg');">
+          <div>
+              <h1>Amber Fort, Rajasthan</h1>
+        <h3 class="mb-4" style="color:#fff; text-shadow: #333 5px 5px 3px 2px;">Hilli Forts in Rajasthan</h3>
+             
+          </div>
+      </div>
+      <div class="myslide" style="background-image: url('images/spot/ooty.jpg');">
+        <div>
+            <h1>Hill Station,Udagamandalam</h1>
+      <h3 class="mb-4" style="color:#fff; text-shadow: #333 5px 5px 3px 2px;">Queen of Hills.</h3>
+           
+        </div>
+    </div>
+    </div>
+
+    <div class="maincont">
+        <div style="text-align: center; margin: 20px 0px; font-family: Arial, Helvetica, sans-serif;">
+          <h1 class="mb-4" style="font-size: 40px; color:#333">Best Tour's</h1>
+      </div>
+
+    <div class="homeslieder2">
+        <ul class="ulimg" style="margin-top: 20px;">
+            <li><img src="images/tour/kr.jpg" width="100%" height="100%" /></li>
+            <li><img src="images/tour/k.jpg" width="100%" height="100%" /></li>
+            <li><img src="images/tour/m3.jpg" width="100%" height="100%" /></li>
+            <li><img src="images/tour/g.jpg" width="100%" height="100%" /></li>
+            <li><img src="images/tour/m.jpg" width="100%" height="100%" /></li>
+        </ul>
+        <div class="myslide2" style="background-image: url('images/tour/kr.jpg');">
+            <div class="text" style="position: relative; text-align: center; top:20%; clear: both;">
+            <h3>Romantic Escape In Kerala - 06 Days / 05 Nights</h3>
+            <ul>
+                <li>Rs. 12000 /- Per Person</li>
+                
+            </ul>
+            </div>
+        </div>
+
+        <div class="myslide2" style="background-image: url('images/tour/k.jpg');">
+            <div class="text" style="position: relative; text-align: center; top:20%; clear: both;">
+            <h3>Charms Of Kanyakumari - 08 Days / 07 Nights</h3>
+            <ul>
+                <li>Rs. 17000 /- Per Person</li>
+                
+            </ul>
+            </div>
+        </div>
+
+        <div class="myslide2" style="background-image: url('images/tour/m3.jpg');">
+            <div class="text" style="position: relative; text-align: center; top:20%; clear: both;">
+            <h3>Munnar, Cherai Beach and Cochin  - 03 Days / 02 Nights</h3>
+            <ul>
+                <li>Rs. 12000 /- Per Person</li>
+                
+            </ul>
+            </div>
+        </div>
+
+        <div class="myslide2" style="background-image: url('images/tour/g.jpg');">
+            <div class="text" style="position: relative; text-align: center; top:20%; clear: both;">
+            <h3>gantok dargeling - 04 Days / 04 Nights</h3>
+            <ul>
+                <li>Rs. 20000 /- Per Person</li>
+                
+            </ul>
+            </div>
+        </div>
+
+        <div class="myslide2" style="background-image: url('images/tour/m.jpg');">
+            <div class="text" style="position: relative; text-align: center; top:20%; clear: both;">
+            <h3>maldives jumeirah - 04 Days / 03 Nights</h3>
+            <ul>
+                <li>Rs. 1,00,000 /- Per Person</li>
+                
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="bstag">
+        <div style="text-align: center; margin: 20px 0px; font-family: Arial, Helvetica, sans-serif;">
+            <h1 class="mb-4" style="font-size: 40px; color:#333">Best Agents </h1>
+        </div>
+        <div class="agent">
+            <img src="images/agent/a1.jpg" width="100%" height="350px" />
+            <h3>Mr.Andry Jakson</h3>
+        </div>
+
+
+        <div class="agent">
+            <img src="images/agent/a2.jpg" width="100%" height="350px" />
+            <h3>Miss. Emma Vatson</h3>
+        </div>
+
+        <div class="agent">
+            <img src="images/agent/a3.jpg" width="100%" height="350px" />
+            <h3>Mr.Jack Faro</h3>
+        </div>
+
+        
+        <div class="agent">
+            <img src="images/agent/a4.jpg" width="100%" height="350px" />
+            <h3>Miss. Angilina varn</h3>
+        </div>
+
+
+        <div class="agent">
+            <img src="images/agent/a5.jpg" width="100%" height="350px" />
+            <h3>Miss. Amelia Tramp</h3>
+        </div>
+
+        <div class="agent">
+            <img src="images/agent/a6.jpg" width="100%" height="350px" />
+            <h3>Miss. Skarlet Rich</h3>
+        </div>
+        
+    </div>
+    
+    
+    <div class="footersec" style="clear: both;">
+        <div class="row">
+            <div class="col">
+                <h3>About</h3>
+                <p style="margin:0px 20px; text-align: justify;">Tourism is the activities of people traveling to and staying in places outside their usual environment for leisure, business or other purposes for not more than one consecutive year.</p>
+            </div>
+            <div class="col">
+                <h3>Navigation</h3>
+                <ul style="list-style-type: none;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Package1.html">Package</a></li>
+                    <li><a href="bestspot.html">Best Spot</a></li>
+                    <li><a href="bstprvtrs.html">Previous Tours</a></li>
+                    <li><a href="FeedBack.html">Feedback</a></li>
+                    <li><a href="service1.html">Services</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="about.html">About us</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Instagram</h3>
+                <ul style="list-style-type: none;" class="instagram">
+                    <li><a href="images/img1.jpg" target="_self"><img src="images/img1.jpg" width="75px" height="75px" /></a></li>
+                    <li><a href="images/img2.jpg" target="_self"><img src="images/img2.jpg" width="75px" height="75px" /></a></li>
+                    <li><a href="images/img3.jpg" target="_self"><img src="images/img3.jpg" width="75px" height="75px" /></a></li>
+                    <li><a href="images/img4.jpg" target="_self"><img src="images/img4.jpg" width="75px" height="75px" /></a></li>
+                    <li><a href="images/img5.jpg" target="_self"><img src="images/img5.jpg" width="75px" height="75px" /></a></li>
+                    <li><a href="images/img6.jpg" target="_self"><img src="images/img6.jpg" width="75px" height="75px" /></a></li>
+                    <li><a href="images/img7.jpg" target="_self"><img src="images/img7.jpg" width="75px" height="75px" /></a></li>
+                    <li><a href="images/img8.jpg" target="_self"><img src="images/img8.jpg" width="75px" height="75px" /></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+       
+        <div class="row" style="text-align: center; padding: 20px;">
+            Copyright © 2020 Shree Tours & Travels India. All Rights Reserved 
+        </div>
+    </div>
+    
+    
+    <script>
+         var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("myslide");
+            for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none"; 
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1} 
+            x[slideIndex-1].style.display = "block"; 
+            setTimeout(carousel, 5000); 
+            }
+
+
+            var slideIndex1 = 0;
+        carousel1();
+
+        function carousel1() {
+            var i;
+            var x = document.getElementsByClassName("myslide2");
+            for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none"; 
+            }
+            slideIndex1++;
+            if (slideIndex1 > x.length) {slideIndex1 = 1} 
+            x[slideIndex1-1].style.display = "block"; 
+            setTimeout(carousel1, 5000); 
+            }
+    </script>
+</body>
+</html>
